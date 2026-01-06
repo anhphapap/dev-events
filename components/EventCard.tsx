@@ -21,13 +21,15 @@ const EventCard = ({
 }: Props) => {
   return (
     <Link href={`/events/${slug}`} id="event-card">
-      <Image
-        src={image}
-        alt={title}
-        width={410}
-        height={300}
-        className="poster"
-      />
+      {image && (
+        <Image
+          src={image}
+          alt={title}
+          width={410}
+          height={300}
+          className="poster"
+        />
+      )}
       <div className="flex gap-1 items-center">
         <Image src="/icons/pin.svg" alt="Pin" width={14} height={14}></Image>
         <p>{location}</p>
