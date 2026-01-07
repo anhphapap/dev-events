@@ -1,36 +1,137 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
+  <br />
+  <img src="public/readme/readme-hero.webp" alt="Dev Event Platform Banner" />
+  <br />
 
-## Getting Started
+  <div>
+    <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" />
+    <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
+    <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" />
+    <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
+    <img src="https://img.shields.io/badge/Cloudinary-002C73?style=for-the-badge&logo=cloudinary&logoColor=white" />
+  </div>
 
-First, run the development server:
+  <h3 align="center">Dev Event Platform</h3>
+
+  <p align="center">
+    A full-stack event management platform built with Next.js App Router,
+    focusing on modern server-side rendering, caching strategies, and clean architecture.
+  </p>
+</div>
+
+---
+
+## 📋 Table of Contents
+
+1. ✨ Introduction  
+2. ⚙️ Tech Stack  
+3. 🔋 Features  
+4. 🤸 Quick Start  
+5. 🧠 Architecture Overview  
+6. 🚀 Future Improvements  
+
+---
+
+## ✨ Introduction
+
+**Dev Event Platform** is a full-stack web application designed to manage and showcase events in a modern, scalable, and performant way.
+
+This project was built as a **hands-on learning project** to deeply understand **Next.js App Router**, with a strong focus on:
+
+- Server Components & Server Actions  
+- Data fetching and caching strategies  
+- MongoDB integration with Mongoose  
+- Client / Server component separation  
+- Clean and maintainable UI using Tailwind CSS  
+
+Users can browse events, view detailed event pages, register for events, and explore similar events.
+
+---
+
+## ⚙️ Tech Stack
+
+- **Next.js (App Router)**  
+- **TypeScript**  
+- **Tailwind CSS**  
+- **MongoDB**  
+- **Mongoose**  
+- **Cloudinary**  
+
+---
+
+## 🔋 Features
+
+- Home page listing upcoming and featured events  
+- Event detail pages with agenda, tags, and organizer info  
+- Secure event booking using Server Actions  
+- Similar event recommendations  
+- Cloudinary image uploads  
+- Optimized caching and revalidation  
+- Clean separation of Server and Client Components  
+
+---
+
+## 🤸 Quick Start
+
+### Prerequisites
+
+- Git  
+- Node.js (v18+)  
+- npm  
+
+### Clone the Repository
+
+```bash
+git clone <your-github-repository-url>
+cd dev-event-platform
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Environment Variables
+
+Create a `.env` file in the project root:
+
+```env
+NEXT_PUBLIC_BASE_URL=http://localhost:3000
+MONGODB_URI=
+CLOUDINARY_URL=
+```
+
+### Run the Project
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🧠 Architecture Overview
 
-## Learn More
+- Server Components handle data fetching and rendering  
+- Client Components manage UI state and interactions  
+- Server Actions handle mutations securely  
+- MongoDB connections are reused safely  
+- Fetch-level caching improves performance  
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 Future Improvements
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Authentication and authorization  
+- Booking confirmation emails  
+- Admin dashboard  
+- Advanced search and filtering  
+- Pagination and performance enhancements  
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📌 License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is created for learning and personal portfolio purposes.
