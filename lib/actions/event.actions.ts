@@ -22,3 +22,8 @@ export const getSimilarEventsBySlug = async (slug: string) => {
     return [];
   }
 };
+
+export async function getEvents() {
+  await connectDB();
+  return Event.find().sort({ createdAt: -1 }).lean();
+}

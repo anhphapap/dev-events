@@ -70,3 +70,5 @@ export const events: Event[] = [
     slug: "nextjs-conf-2026",
   },
 ];
+
+export default events;
