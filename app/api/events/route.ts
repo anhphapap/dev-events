@@ -4,7 +4,6 @@ import { Event } from "@/database";
 import { v2 as cloudinary } from "cloudinary";
 import { Readable } from "stream";
 
-export const runtime = "nodejs";
 // Nếu deploy Vercel: tăng thời gian xử lý (tùy plan)
 // export const maxDuration = 60;
 
