@@ -2,6 +2,7 @@
 
 import { Event } from "@/database";
 import connectDB from "../mongodb";
+import { cacheLife } from "next/cache";
 
 export const getSimilarEventsBySlug = async (slug: string) => {
   try {
@@ -24,6 +25,13 @@ export const getSimilarEventsBySlug = async (slug: string) => {
 };
 
 export async function getEvents() {
-  await connectDB();
-  return Event.find().sort({ createdAt: -1 }).lean();
+  "use cache";
+  cacheLife("hours");
+  try {
+    await connectDB();
+    return Event.find().sort({ createdAt: -1 }).lean();
+  } catch (error) {
+    console.error(error);
+    return [];
+  }
 }
