@@ -2,9 +2,8 @@ import EventCard from "@/components/EventCard";
 import ExploreBtn from "@/components/ExploreBtn";
 import { IEvent } from "@/database";
 import { getEvents } from "@/lib/actions/event.actions";
-import events from "@/lib/constants";
 const page = async () => {
-  // const events = (await getEvents()) as unknown as IEvent[];
+  const events = (await getEvents()) as unknown as IEvent[];
   return (
     <section>
       <h1 className="text-center">
