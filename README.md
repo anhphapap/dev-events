@@ -21,63 +21,52 @@
 
 ---
 
-## 📋 Table of Contents
-
-1. ✨ Introduction  
-2. ⚙️ Tech Stack  
-3. 🔋 Features  
-4. 🤸 Quick Start  
-5. 🧠 Architecture Overview  
-6. 🚀 Future Improvements  
-
----
-
-## ✨ Introduction
+## Introduction
 
 **Dev Event Platform** is a full-stack web application designed to manage and showcase events in a modern, scalable, and performant way.
 
 This project was built as a **hands-on learning project** to deeply understand **Next.js App Router**, with a strong focus on:
 
-- Server Components & Server Actions  
-- Data fetching and caching strategies  
-- MongoDB integration with Mongoose  
-- Client / Server component separation  
-- Clean and maintainable UI using Tailwind CSS  
+- Server Components & Server Actions
+- Data fetching and caching strategies
+- MongoDB integration with Mongoose
+- Client / Server component separation
+- Clean and maintainable UI using Tailwind CSS
 
 Users can browse events, view detailed event pages, register for events, and explore similar events.
 
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 
-- **Next.js (App Router)**  
-- **TypeScript**  
-- **Tailwind CSS**  
-- **MongoDB**  
-- **Mongoose**  
-- **Cloudinary**  
-
----
-
-## 🔋 Features
-
-- Home page listing upcoming and featured events  
-- Event detail pages with agenda, tags, and organizer info  
-- Secure event booking using Server Actions  
-- Similar event recommendations  
-- Cloudinary image uploads  
-- Optimized caching and revalidation  
-- Clean separation of Server and Client Components  
+- **Next.js (App Router)**
+- **TypeScript**
+- **Tailwind CSS**
+- **MongoDB**
+- **Mongoose**
+- **Cloudinary**
 
 ---
 
-## 🤸 Quick Start
+## Features
+
+- Home page listing upcoming and featured events
+- Event detail pages with agenda, tags, and organizer info
+- Secure event booking using Server Actions
+- Similar event recommendations
+- Cloudinary image uploads
+- Optimized caching and revalidation
+- Clean separation of Server and Client Components
+
+---
+
+## Quick Start
 
 ### Prerequisites
 
-- Git  
-- Node.js (v18+)  
-- npm  
+- Git
+- Node.js (v18+)
+- npm
 
 ### Clone the Repository
 
@@ -112,26 +101,26 @@ Open http://localhost:3000 in your browser.
 
 ---
 
-## 🧠 Architecture Overview
+## Architecture Overview
 
-- Server Components handle data fetching and rendering  
-- Client Components manage UI state and interactions  
-- Server Actions handle mutations securely  
-- MongoDB connections are reused safely  
-- Fetch-level caching improves performance  
-
----
-
-## 🚀 Future Improvements
-
-- Authentication and authorization  
-- Booking confirmation emails  
-- Admin dashboard  
-- Advanced search and filtering  
-- Pagination and performance enhancements  
+- Server Components handle data fetching and rendering
+- Client Components manage UI state and interactions
+- Server Actions handle mutations securely
+- MongoDB connections are reused safely
+- Fetch-level caching improves performance
 
 ---
 
-## 📌 License
+## Future Improvements
+
+- Authentication and authorization
+- Booking confirmation emails
+- Admin dashboard
+- Advanced search and filtering
+- Pagination and performance enhancements
+
+---
+
+## License
 
 This project is created for learning and personal portfolio purposes.
